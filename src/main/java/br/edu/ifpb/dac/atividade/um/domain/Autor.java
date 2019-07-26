@@ -1,4 +1,4 @@
-package br.edu.ifpb.dac.atividade.domain;
+package br.edu.ifpb.dac.atividade.um.domain;
 
 import java.io.Serializable;
 import javax.persistence.CascadeType;

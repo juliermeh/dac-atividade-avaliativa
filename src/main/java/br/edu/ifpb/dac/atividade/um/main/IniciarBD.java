@@ -1,4 +1,4 @@
-package br.edu.ifpb.dac.atividade.main;
+package br.edu.ifpb.dac.atividade.um.main;
 
 import javax.persistence.EntityManager;
 

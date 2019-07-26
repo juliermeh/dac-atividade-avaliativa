@@ -1,9 +1,9 @@
-package br.edu.ifpb.dac.atividade.main;
+package br.edu.ifpb.dac.atividade.um.main;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
-public class MainCriteria {
+public class MainJPQL {
 
     public static void main(String[] args) {
         
@@ -12,7 +12,7 @@ public class MainCriteria {
             .createEntityManager();
         new IniciarBD(em).dadosIniciais();
         
-        //consultas criteria
+        //consultas jpql
         
     }
     
