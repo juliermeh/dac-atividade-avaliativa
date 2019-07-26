@@ -3,6 +3,7 @@ package br.edu.ifpb.dac.atividade.domain;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
@@ -14,7 +15,7 @@ public class Professor implements Serializable {
     @Id
     private int ID;
     private double salario;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Pessoa pessoa;
     @ManyToMany(mappedBy = "professores")
     private List<Telefone> telefones;

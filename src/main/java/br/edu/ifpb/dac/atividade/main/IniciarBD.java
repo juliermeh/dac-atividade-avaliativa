@@ -10,5 +10,8 @@ public class IniciarBD {
         this.em = em;
     }
      
+    public void dadosIniciais(){
+        
+    }
     
 }

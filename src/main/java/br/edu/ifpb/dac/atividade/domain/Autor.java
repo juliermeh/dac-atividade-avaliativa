@@ -1,6 +1,7 @@
 package br.edu.ifpb.dac.atividade.domain;
 
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,7 +14,7 @@ public class Autor implements Serializable {
     @GeneratedValue
     private int ID;
     private String instituicaoVinculada;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Pessoa pessoa;
     
     public Autor() { }

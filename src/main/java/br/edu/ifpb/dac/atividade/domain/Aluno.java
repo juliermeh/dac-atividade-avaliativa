@@ -2,6 +2,7 @@ package br.edu.ifpb.dac.atividade.domain;
 
 import java.io.Serializable;
 import java.sql.Date;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,7 +17,7 @@ public class Aluno implements Serializable{
     private String matricula;
     private Date dataIngresso;
     private String turma;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Pessoa pessoa;
 
     public Aluno() { }
